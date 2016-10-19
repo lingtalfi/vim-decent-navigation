@@ -350,6 +350,14 @@ Here is a taste of its power.
 
 
 
+Related
+-------------
+- [vim decent navigation](https://github.com/lingtalfi/vim-decent-navigation)
+- [vim survivor kit](https://github.com/lingtalfi/vim-survivor-kit)
+- [vim refresher notes](https://github.com/lingtalfi/vim-refresher)
+
+
+
 
 
 Sources
