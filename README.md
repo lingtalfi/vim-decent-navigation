@@ -54,6 +54,7 @@ Note: it won't work yet, it's just the first step.
 ```vim
 
 
+" DECENT VIM NAVIGATION
 " general settings (optional)
 syntax enable
 set nocompatible
@@ -88,6 +89,33 @@ nnoremap <ESC>^H dbh
 inoremap <ESC>^H <ESC> :normal! dbh<CR>i 
 
 
+```
+
+Here is the uncommented version (if you have problem with copy pasting prefixing every line with quotes)
+
+```vim
+
+syntax enable
+set nocompatible
+set tabstop=4
+set mouse=
+nnoremap <C-d> :normal! mmyyp`m<CR>
+inoremap <C-d> <ESC> :normal! mmyyp`m<CR>i
+vnoremap <C-d> y'>p<CR>
+nnoremap <ESC>f w
+inoremap <ESC>f <ESC> :normal! w<CR>i
+nnoremap <ESC>b b
+inoremap <ESC>b <ESC> :normal! b<CR>i
+nnoremap <ESC>l :m .+1<CR>==
+nnoremap <ESC>u :m .-2<CR>==
+inoremap <ESC>l <Esc>:m .+1<CR>==gi
+inoremap <ESC>u <Esc>:m .-2<CR>==gi
+vnoremap <ESC>l :m '>+1<CR>gv=gv
+vnoremap <ESC>u :m '<-2<CR>gv=gv
+nnoremap <Esc>d dw
+inoremap <Esc>d <ESC> :normal! dw<CR>i
+nnoremap <ESC>^H dbh 
+inoremap <ESC>^H <ESC> :normal! dbh<CR>i 
 ```
 
 ### Step 2: fix the code
